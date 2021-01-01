@@ -268,6 +268,11 @@ h6 {
 	width: 23%;
 }
 
+.loading{
+	display: flex;
+	justify-content: center;
+}
+
 
 
 

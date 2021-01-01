@@ -16,9 +16,7 @@ export default class Homepage extends Component {
 	}
 
 	renderLoading = () => {
-		return (
-			<Loader content="Yükleniyor..." vertical />
-		)
+		return (<div className="loading"><Loader content="Yükleniyor..." vertical /></div>)
 	}
 
 	changeCity = e => {

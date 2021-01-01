@@ -18,7 +18,6 @@ export default class Weekly extends Component {
   }
 
   getWeather = (city) => {
-    console.log(city);
     let url = "http://api.weatherapi.com/v1/forecast.json?key=" + "e1b8b4a8d98c43d0812151809202612&lang=tr&" + "q=" + city + "&days=7";
     fetch(url)
       .then(res => res.json())
@@ -34,7 +33,9 @@ export default class Weekly extends Component {
 
   renderLoading = () => {
     return (
+      <div className="loading">
       <Loader content="Yükleniyor..." vertical />
+      </div>
     )
   }
 
